@@ -62,7 +62,7 @@ export default class Pokemon extends Component {
     const pokemonRes = await Axios.get(pokemonUrl);
 
     const name = pokemonRes.data.name;
-    const imageUrl = pokemonRes.data.sprites.front_default;
+    const imageUrl = `https://projectpokemon.org/images/normal-sprite/${name}.gif`; // testing fix here: pokemonRes.data.sprites.front_default;
 
     let { hp, attack, defense, speed, specialAttack, specialDefense } = '';
 
