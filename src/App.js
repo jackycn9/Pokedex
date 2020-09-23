@@ -9,7 +9,6 @@ import backgroundImage from './pattern.png';
 
 import NavBar from './components/layout/NavBar';
 import Dashboard from './components/layout/Dashboard';
-import SearchBar from './components/search/SearchBar';
 import Pokemon from './components/pokemon/Pokemon';
 
 class App extends Component {

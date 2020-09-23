@@ -55,7 +55,7 @@ export default class Pokemon extends Component {
     const { pokemonIndex } = this.props.match.params;
 
     // Urls for pokemon information
-    const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonIndex}/`;
+    const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0${pokemonIndex}/`; // added ?limit=151&offset=0 testing
     const pokemonSpeciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonIndex}/`;
 
     // Get Pokemon Information
